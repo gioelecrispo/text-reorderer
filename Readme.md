@@ -1,7 +1,12 @@
 # Text Reorderer
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/gioelecrispo/text-reorderer/blob/master/text-reorderer.ipynb)
+
+
 This notebook provides a method to reorder the sentences in a text, using BERT For Next Sentence Prediction.
 It is an important NLP task, especially when you have some unordered text coming from different sources such as in Summarization o Multi-Summarization tasks.  
+
+Example
 
 ```python
 sentences =  [
@@ -16,6 +21,9 @@ ordering = reorder_sentences(sentences)
 reordered_sentences = [sentences[idx] for idx in ordering]
 ordering, reordered_sentences
 ```
+
+
+Output
 
 ```python
 # Output
